@@ -7,11 +7,34 @@
     <title>HTML Application</title>
 </head>
 <body>
-
-    <figure style="align-items: right;" >
-        <img srcset="hero.jpg"  alt="I'm the Hero">
-        <figcaption>FigureCaption: I'am the Hero</figcaption>
-    </figure>
+    <fieldset>
+        <legend>Data Entry System:</legend>
+        <form style="align-items: ;">
+            <label for="name">Enter Name: </label>
+            <input type="text" required="required"/>
+            <br>
+            <label for="fathername">Enter Father Name : </label>
+            <input type="text">
+            <br>
+            <label for="email">Enter Email: </label>
+            <input type="email">
+            <br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="selectgender" required="required">
+                <option value="Male" >Male</option>
+                <option value="Female">Female</option>
+                <option value="Shemale">Shemale</option>
+            </select>
+                
+        </form>
+        <hr>
+        <fieldset style="align-items: last baseline;">
+            <figure style="align-items: right;" >
+                <img srcset="hero.jpg"  alt="I'm the Hero">
+                <figcaption>FigureCaption: I'am the Hero</figcaption>
+            </figure>
+        </fieldset>
+    </fieldset>
     
 </body>
 </html>
