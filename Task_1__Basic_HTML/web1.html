@@ -4,36 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Application</title>
+    <title>Email Registeration Form</title>
 </head>
-<body>
+<body style="background-color: #D7DDE8;">
+
+    <table>
+        <tr><a href="#"> Home </a></tr>
+        <tr><a href="#" target="_blank" > Signup </a></tr>
+        <tr><a href="#" target="_blank" > Login </a></tr>
+        <tr><a href="#" target="_blank" > Contact Us </a></tr>
+        <tr><a href="#" target="_blank" > About Us </a></tr>
+    </table>
+
+    <br>
+
     <fieldset>
-        <legend>Data Entry System:</legend>
-        <form >
-            <label for="name">Enter Name: </label>
-            <input type="text" required="required" size="20dp"/>
+        <legend>Email Signup Form</legend>
+        <fieldset style="padding: 1px; border: 1px solid; background-color: #6dd5ed; width: 200px; float: right">
+            <legend>Profile Photo</legend>
+            <figure>
+                <img srcset="hero.jpg"  alt="I'm the Hero" style="display: block;"/>
+                <figcaption>FigureCaption: Profile Photo</figcaption>
+            </figure>
+        </fieldset>
+        <form>
+            <label for="name">Name: </label>
             <br>
-            <label for="fathername">Enter Father Name : </label>
-            <input type="text" size="20dp">
+            <input type="text" required="required" size="25dp" placeholder="First name"/>
+            <input type="text" required="required" size="25dp" placeholder="Middle name"/>
+            <input type="text" required="required" size="25dp" placeholder="Last name"/>
             <br>
-            <label for="email">Enter Email: </label>
-            <input type="email" size="20dp">
+            <label for="email">Email: </label>
             <br>
-            <label for="gender">Gender</label>
+            <input type="email" size="25dp" placeholder="Email">
+            <input type="email" size="25dp" placeholder="Confirm Email">
+            <br>
+            <label for="password">Password: </label>
+            <br>
+            <input type="password" size="25dp" placeholder="Password">
+            <input type="retypepassword" size="25dp" placeholder="Retype Password">
+            <br>
+            <label for="gender">Gender:</label>
+            <br>
             <select name="gender" id="selectgender" required="required">
                 <option value="Male" >Male</option>
                 <option value="Female">Female</option>
                 <option value="Shemale">Shemale</option>
             </select>
-                
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="number" name="phone" placeholder="+92 300 0000000">
+            <br>
+            <label for="text">Address: </label>
+            <br>
+            <input type="address" size="25dp" placeholder="House, Street, Town, City">
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <input type="button" value="submit" required="required">
         </form>
         <hr>
-        <fieldset style="align-items: last baseline;">
-            <figure style="align-items: center;" >
-                <img srcset="hero.jpg"  alt="I'm the Hero" style="display: block;"/>
-                <figcaption style="text-align: center;">FigureCaption: I'am the Hero</figcaption>
-            </figure>
-        </fieldset>
     </fieldset>
     
 </body>
