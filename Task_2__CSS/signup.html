@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Email Registeration Form</title>
+</head>
+<body>
+
+    <dl class="navbar">
+        <dd><a href="index.html"> Home </a></dd>
+        <dd><a href="signup.html" target="_blank" > Signup </a></dd>
+        <dd><a href="login.html" target="_blank" > Login </a></dd>
+        <dd><a href="contact.html" target="_blank" > Contact US </a></dd>
+        <dd><a href="about.html" target="_blank" > About US </a></dd>
+    </dl>
+
+    <hr>
+
+    <fieldset>
+        <legend>Email Signup Form</legend>
+        <fieldset style="padding: 1px; border: 1px solid; width: 200px; float: right">
+            <legend>Profile Photo</legend>
+            <figure>
+                <img srcset="hero.jpg"  alt="I'm the Hero" style="display: block;"/>
+                <figcaption>FigureCaption: Profile Photo</figcaption>
+            </figure>
+        </fieldset>
+        <form>
+            <label for="name">Name: </label>
+            <br>
+            <input type="text" required="required" size="25dp" placeholder="First name"/>
+            <input type="text" required="required" size="25dp" placeholder="Middle name"/>
+            <input type="text" required="required" size="25dp" placeholder="Last name"/>
+            <br>
+            <label for="email">Email: </label>
+            <br>
+            <input type="email" size="25dp" placeholder="Email">
+            <input type="email" size="25dp" placeholder="Confirm Email">
+            <br>
+            <label for="password">Password: </label>
+            <br>
+            <input type="password" size="25dp" placeholder="Password">
+            <input type="retypepassword" size="25dp" placeholder="Retype Password">
+            <br>
+            <label for="gender">Gender:</label>
+            <br>
+            <select name="gender" id="selectgender" required="required">
+                <option value="Male" >Male</option>
+                <option value="Female">Female</option>
+                <option value="Shemale">Shemale</option>
+            </select>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="number" name="phone" placeholder="+92 300 0000000">
+            <br>
+            <label for="text">Address: </label>
+            <br>
+            <input type="address" size="25dp" placeholder="House, Street, Town, City">
+            <br>
+            <br>
+            
+            <br>
+            <input type="button" value="Submit" required="required">
+        </form>
+    </fieldset>
+    
+</body>
+</html>

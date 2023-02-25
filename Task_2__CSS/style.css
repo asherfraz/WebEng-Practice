@@ -1,0 +1,14 @@
+* {
+    background-color: aliceblue;
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: black;
+}
